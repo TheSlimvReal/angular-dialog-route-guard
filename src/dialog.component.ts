@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   template: `
     <mat-dialog-content>
       <h2>Dialog</h2>
-      <button mat-stroked-button routerLink='/second'>Route</button>
+      <button mat-stroked-button routerLink='/second'>Second</button>
     </mat-dialog-content>
     `,
   standalone: true,

@@ -42,10 +42,9 @@
             "outputPath": "dist/demo",
             "scripts": [],
             "styles": [
-              "src/global_styles.css",
               "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
             ],
-            "tsConfig": "src/tsconfig.app.json"
+            "tsConfig": "tsconfig.json"
           }
         },
         "extract-i18n": {

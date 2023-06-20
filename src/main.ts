@@ -1,6 +1,5 @@
 import 'zone.js/dist/zone';
 import { Component, importProvidersFrom, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter, RouterOutlet } from '@angular/router';
 import { SecondComponent } from './second.component';
@@ -27,7 +26,7 @@ bootstrapApplication(App, {
         path: 'first',
         component: FirstComponent,
         canDeactivate: [
-          () => inject(MatDialog).openDialogs.length === 0 || true,
+          () => inject(MatDialog).openDialogs.length === 0,
         ],
       },
       { path: 'second', component: SecondComponent },
